@@ -8,7 +8,7 @@ import {
 
 export default function UserDashboard() {
   return (
-    <div className="relative min-h-[calc(100vh-140px)] px-6 py-10 max-w-7xl mx-auto">
+<div className="relative px-6 py-10 max-w-7xl mx-auto">
       {/* PAGE HEADER */}
       <header className="mb-10 border-b pb-6">
         <h1 className="text-3xl font-bold text-gray-900">
