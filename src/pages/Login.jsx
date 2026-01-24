@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import PublicHeader from "../components/PublicHeader";
 import PublicFooter from "../components/PublicFooter";
 
+import mahaMap from "../assets/maharashtra-map.png";
+import footLogo from "../assets/foot-logo.png";
+
 export default function Login() {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("superadmin");
@@ -40,7 +43,7 @@ export default function Login() {
           {/* MAP */}
           <div className="flex justify-center">
             <img
-              src="/maharashtra-map.png"
+              src={mahaMap}
               alt="Maharashtra Map"
               className="w-[620px] max-w-full object-contain brightness-110 contrast-110"
             />
@@ -71,7 +74,6 @@ export default function Login() {
                 >
                   USER LOGIN
                 </button>
-                
               </div>
 
               {/* SUPER ADMIN */}
@@ -98,7 +100,6 @@ export default function Login() {
                     Sign In
                   </button>
 
-                  {/* GOV NOTICE */}
                   <p className="text-xs text-gray-500 text-center leading-relaxed">
                     Authorized access only. Unauthorized use of this system is
                     prohibited and may be subject to disciplinary.
@@ -125,10 +126,9 @@ export default function Login() {
                     Sign In
                   </button>
                   <p className="text-xs text-gray-500 text-center leading-relaxed">
-                      This portal is intended for registered beneficiaries only.
-                      Please ensure your credentials are kept confidential.
-                    </p>
-
+                    This portal is intended for registered beneficiaries only.
+                    Please ensure your credentials are kept confidential.
+                  </p>
                 </form>
               )}
             </div>
@@ -138,7 +138,7 @@ export default function Login() {
 
       {/* FOOT LOGO */}
       <img
-        src="/foot-logo.png"
+        src={footLogo}
         alt="Footer Logo"
         className="absolute right-3 bottom-1 w-28 opacity-90"
       />

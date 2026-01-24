@@ -1,8 +1,13 @@
+import mahaLogo from "../assets/maha-logo.png";
+import maha2Logo from "../assets/maha2-logo.png";
+
 export default function PublicHeader() {
   return (
     <header className="bg-[#f8fafc] border-b border-slate-300 h-[110px] flex items-center px-4 sm:px-12">
+      
+      {/* LEFT LOGO */}
       <img
-        src="/maha-logo.png"
+        src={mahaLogo}
         className="h-[70px] sm:h-[100px] w-auto object-contain"
         alt="Maha Logo"
       />
@@ -16,9 +21,9 @@ export default function PublicHeader() {
         </p>
       </div>
 
-      {/* RIGHT SIDE LOGO */}
+      {/* RIGHT LOGO */}
       <img
-        src="/maha2-logo.png"
+        src={maha2Logo}
         className="h-[100px] sm:h-[110px] w-auto object-contain ml-auto"
         alt="Maha Secondary Logo"
       />
