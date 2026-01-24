@@ -55,8 +55,6 @@ export default function UserDashboard() {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 }
